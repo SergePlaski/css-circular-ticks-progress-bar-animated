@@ -1,0 +1,102 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/build
+**/dist
+**/dist-ssr
+**/dist-server
+**/out-tsc
+
+# Next.js
+/.next/
+/out/
+
+# dependencies
+**/node_modules/
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# keys, settings, environment
+**/*key.json
+**/config.json
+**/.*local
+**/.env*.local
+
+# tests
+**/e2e/*.js
+**/e2e/*.map
+**/coverage
+
+# lock files
+**/package-lock.json
+**/yarn.lock
+connect.lock
+
+# misc and logs
+**/*.log
+**/*.yaml
+**/tmp
+
+# project notes
+**/course_notes
+**/info
+**/info.txt
+
+# typescript
+typings/
+*.tsbuildinfo
+# typescript
+next-env.d.ts
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Sass cache
+.sass-cache
+
+# System Files
+Thumbs.db
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+.history/
+.idea
+.DS_Store
+*.pem
+.project
+.classpath
+*.launch
+.settings
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# vercel
+.vercel
+
+# firebase and hosting
+.firebase/
+.firebaserc
+firebase.json
+firebase-debug.log
+
+# yarn and yarn v2
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*

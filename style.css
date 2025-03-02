@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --card-size: 200px;
+  --tick-size: 20px;
+  --tick-color-lime: #0f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: radial-gradient(circle, #444, #222);
+}
+
+.progress--wrapper {
+  position: relative;
+  width: var(--card-size);
+  height: var(--card-size);
+}
+
+.progress--wrapper .progress--tick {
+  position: absolute;
+  width: 2px;
+  height: var(--tick-size);
+  left: 50%;
+  transform-origin: 50% calc(var(--card-size)/2);
+  background: #000;
+  opacity: 0;
+  animation: animateTick 100ms linear forwards;
+}
+
+.progress--wrapper .progress--tick[active] {
+  background-color: var(--tick-color-lime);
+  box-shadow: 0 0 var(--tick-size) var(--tick-color-lime), 0 0 calc(var(--tick-size)*2) var(--tick-color-lime);
+}
+
+/* progress data */
+.progress--wrapper .progress--data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.35;
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #fff;
+}
+
+.progress--wrapper .progress--data > p {
+  display: flex;
+  align-items: center;
+}
+
+.progress--wrapper .progress--data [data-progress] {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.progress--wrapper .progress--data .progress--pct {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+@keyframes animateTick {
+  0% {
+    opacity: 0;
+  }
+  100% {
+   opacity: 1;
+  }
+}
