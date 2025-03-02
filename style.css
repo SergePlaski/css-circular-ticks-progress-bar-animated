@@ -44,7 +44,7 @@ body {
   box-shadow: 0 0 var(--tick-size) var(--tick-color-lime), 0 0 calc(var(--tick-size)*2) var(--tick-color-lime);
 }
 
-/* progress data */
+/* progress data label */
 .progress--wrapper .progress--data {
   position: absolute;
   top: 50%;
@@ -59,6 +59,7 @@ body {
 
 .progress--wrapper .progress--data > p {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
